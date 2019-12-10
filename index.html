@@ -9,636 +9,707 @@
 		
 		body {margin:0;font-family:Arial}
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 175px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;
-    width: 100%;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-  .center {
-        background-color: #696969;
-        float: left;
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .topnav .icon {
+      display: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 175px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .topnav a:hover, .dropdown:hover .dropbtn {
+      background-color: #555;
+      color: white;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {float: none;}
+      .topnav.responsive .dropdown-content {position: relative;}
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;
+        width: 100%;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
         margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+    
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    h9 {
+      color: brown;
+    }
+     
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    
+    }
+    
+    
+      .center {
+            background-color: #696969;
+            float: left;
+            margin: auto;
+            padding: 20px;
+    }
+    
+    
+    @media screen and (max-width:800px) {
+      .center {
+        width:100%;
+      }
+    }
+    
+    .rest {
+        flex: 54%;
+        background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
         padding: 16px;
-}
-
-
-@media screen and (max-width:800px) {
-  .center {
-    width:100%;
-  }
-}
-
-.rest {
-    flex: 54%;
-    background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
-    padding: 16px;
-
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.side {
-  flex: 4%;
-  padding: 0px;
-}
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-h2 {
-  font-size: 34px;
-}
-
-.moh {
-  padding: 0;
-  margin: 0;
- 
-  display: flex;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 17px;
-}
-@media screen and (max-width: 625px) {
-  .row {   
-    flex-direction: column;
-  }
-}
-
-
-
-
-body {
-  color: #333;
-  font-family: "Raleway", Arial, Helvetica, serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
-}
-
-
-
-
-
-.main{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-  color: #ffffff;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-}
-
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
- 
-}
-
-.card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
-}
-
-.card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
-}
-
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
-}
-.made_by{
-  font-weight: 400;
-  font-size: 13px;
-  
-  text-align: center;
-}
-
-        /* Font */
-        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-        /* Design */
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-        }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.align {
-
-  background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;;
-}
-.footer1  {
-
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-
-}
-
-.fa {
-
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-  padding:11px 5px;
-  background: #3B5998;
-  color: white;
-
-
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 0px;
-  border-radius: 100%;
-}
-    .fa-twitter {
+    
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .side {
+      flex: 4%;
+      padding: 0px;
+    }
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
+    h2 {
+      font-size: 34px;
+    }
+    
+    .moh {
+      padding: 0;
+      margin: 0;
+     
+      display: flex;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 17px;
+    }
+    
+    @media screen and (max-width: 625px) {
+      .row {   
+        flex-direction: column;
+      }
+    }
+    
+    
+    body {
+      color: #333;
+      font-family: "Raleway", Arial, Helvetica, serif;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+    }
+    
+    
+    
+    
+    
+    .main{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    img {
+      height: auto;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    
+    .btn {
+      color: #ffffff;
+      padding: 0.8rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent;
+      text-decoration: none;
+    }
+    
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+    }
+    
+    @media (min-width: 40rem) {
+      .cards_item {
+        width: 50%;
+      }
+    }
+    
+    @media (min-width: 56rem) {
+      .cards_item {
+        width: 33.3333%;
+      }
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 0.25rem;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+     
+    }
+    
+    .card_content {
+      padding: 1rem;
+      background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    }
+    
+    .card_title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin: 0px;
+    }
+    
+    .card_text {
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;    
+      font-weight: 400;
+    }
+    .made_by{
+      font-weight: 400;
+      font-size: 13px;
+      margin-top: 35px;
+      text-align: center;
+    }
+    
+            /* Font */
+            @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+    
+            /* Design */
+            *,
+            *::before,
+            *::after {
+              box-sizing: border-box;
+            }
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .align {
+    
+      background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;;
+    }
+    .footer1  {
+   
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    
+    }
+    
+    .fa {
+    
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
       padding:11px 5px;
-  background: #55ACEE;
-  color: white;
+      background: #3B5998;
+      color: white;
+    
+    
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0px 0px;
+      border-radius: 100%;
+    }
+        .fa-twitter {
+          padding:11px 5px;
+      background: #55ACEE;
+      color: white;
+    
+    
+    
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0px 0px;
+      border-radius: 100%;
+    
+    }
+    .fa-linkedin {
+       padding:11px 5px;
+      background: #007bb5;
+      color: white;
+    
+    
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0px 0px;
+      border-radius: 100%;
+    }
+    .fa-instagram {
+       padding:11px 5px;
+      background: #125688;
+      color: white;
+    
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0px 0px;
+      border-radius: 100%;
+    }
+    
+    
+    .mwee{
+      background: #23263e;
+    }
+    
 
+.cv{
+  float: left;
+  padding-right: 15px;
+}
+.hjk{
 
+        padding-bottom: 10px;
+     
+}
+.beache{
+  padding-left: 17px;
+ 
+  font-size:16.5px;
+}
 
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
+.mv{
   text-decoration: none;
-  margin: 0px 0px;
-  border-radius: 100%;
-
-}
-.fa-linkedin {
-   padding:11px 5px;
-  background: #007bb5;
-  color: white;
-
-
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 0px;
-  border-radius: 100%;
-}
-.fa-instagram {
-   padding:11px 5px;
-  background: #125688;
-  color: white;
-
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0px 0px;
-  border-radius: 100%;
 }
 
-
-.mwee{
-  background: #23263e;
-}
 
 	</style>
 </head>
 <body>
 
-
-  <div class="mwee">
-    <img src="tag12.png"></div>
-
-  <div class="topnav" id="myTopnav">
-    <a href="#" class="active">Home</a>
-    <a href="Adventure.html">Adventures</a>
-    <a href="#">Destinations</a>
-    <div class="dropdown">
-      <button class="dropbtn">States
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Northern State</a>
-        <a href="#">Southern State</a>
-        <a href="#">Central State</a>
-        <a href="#">Eastern State</a>
-        <a href="#">Western State</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">Union Territories
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-          <a href="#">Andaman And Nicobar</a>
-    <a href="#">Ladakh</a>
-    <a href="#">Jammu And Kashmir</a>
-          <a href="#">Chandigarh</a>
-          <a href="#">Daman And Diu</a>
-          <a href="#">Dadar And Nagar Haveli</a>
-          <a href="#">Lakshdaweep</a>
-          <a href="#">Pondicherry</a>
-        <a href="#">National Capital Territory of Delhi</a>
-      </div>
-    </div>
-    <a href="#about">About</a>
-   <a href="contact.html">Contact Me</a>
-  <a href="https://mr-akhilwebsite.000webhostapp.com/ab.php">Feedback</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-
-  <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="taj1.jpg" style="width:100%">
-        <div class="text"><h1>Taj Mahal</h1></div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="Jayatu.jpg" style="width:100%">
-    <div class="text"><h1>Jatayu</h1></div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img src="babuy1.jpg" style="width:100%">
-        <div class="text"><h1>Royal Bengal Tiger</h1></div>
-      </div>
-
-      </div>
-
-
-      <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-
-  <div class="row">
-      <div class="side">
-
-    <div class="center">
-      <h1><b><strong>Web Developer:</strong></b></h1>
-      <center><img src="img11.jpg" alt="Nature" class="Responsive"  class="img-fluid"></center></br>
-      <p><b>
-        Currently  Works At Software Developer.</b>
-        </p>
-
-        </div>
-      </div>
-
-
-    <div class="rest">
-      <h2><b><strong><center>Incredible India</center></strong></b></h2>
-
-      <img src="india1234.jpg"  alt="Nature" class="responsive"  width="1000" height="200">
-     <div class="moh">
-      <p> "As the 7th largest country in the world, India is one of the oldest civilizations in the world
-           with a kaleidoscopic variety and rich cultural heritage.
-           It has achieved all-round socio-economic progress during
-           the last 65 years of its Independence.India has become
-           self-sufficient in agricultural production and is now one
-           of the top industrialized countries in the world and one of
-            the few nations to have gone into outer space to conquer
-            nature for the benefit of the people.
-            It covers an area of 32,87,263 sq.km, extending from the snow-covered Himalayan
-            heights to the tropical rain forests of the south." </p>
+    <div class="mwee">
+        <img src="tag12.png"></div>
+    
+      <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="Adventure.html">Adventures</a>
+        <a href="#">Destinations</a>
+        <div class="dropdown">
+          <button class="dropbtn">States
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Northern State</a>
+            <a href="#">Southern State</a>
+            <a href="#">Central State</a>
+            <a href="#">Eastern State</a>
+            <a href="#">Western State</a>
           </div>
         </div>
-  </div>
-  </div>
+        <div class="dropdown">
+          <button class="dropbtn">Union Territories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="#">Andaman And Nicobar</a>
+        <a href="#">Ladakh</a>
+        <a href="#">Jammu And Kashmir</a>
+              <a href="#">Chandigarh</a>
+              <a href="#">Daman And Diu</a>
+              <a href="#">Dadar And Nagar Haveli</a>
+              <a href="#">Lakshdaweep</a>
+              <a href="#">Pondicherry</a>
+            <a href="#">National Capital Territory of Delhi</a>
+          </div>
+        </div>
+        <a href="#about">About</a>
+       <a href="contact.html">Contact Me</a>
+      <a href="https://mr-akhilwebsite.000webhostapp.com/ab.php">Feedback</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    
+      <div class="slideshow-container">
+    
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="taj1.jpg" style="width:100%">
+            <div class="text"><h1>Taj Mahal</h1></div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Jayat.jpg" style="width:100%">
+        <div class="text"><h1>Jatayu</h1></div>
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="babuy1.jpg" style="width:100%">
+            <div class="text"><h1>Royal Bengal Tiger</h1></div>
+          </div>
+    
+          </div>
+    
+    
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+    
+      <div class="row">
+          <div class="side">
+    
+        <div class="center">
+            <h2>About Me</h2>
+            <h5><b>Website developer:</b></h5>
+          <center><img src="image.jpg" alt="Nature" class="Responsive"  class="img-fluid"></center></br>
+          <p>AKHIL SHAHNI S/O GIRISH CHAND PRASAD<br>
+            <b>
+            Currently  Works At Software Developer.</b>
+            </p>
+         
+    
+            </div>
+          </div>
+      
+    
+        <div class="rest">
+          <h2><b><strong><center>Incredible India</center></strong></b></h2>
+    
+          <img src="india1234.jpg"  alt="Nature" class="responsive"  width="1000" height="200">
+         <div class="moh">
+          <p> "As the 7th largest country in the world, India is one of the oldest civilizations in the world
+               with a kaleidoscopic variety and rich cultural heritage.
+               It has achieved all-round socio-economic progress during
+               the last 65 years of its Independence.India has become
+               self-sufficient in agricultural production and is now one
+               of the top industrialized countries in the world and one of
+                the few nations to have gone into outer space to conquer
+                nature for the benefit of the people.
+                It covers an area of 32,87,263 sq.km, extending from the snow-covered Himalayan
+                heights to the tropical rain forests of the south."</p>
+              </div>
+            </div>
+      </div>
+     
+    
+    
+               <div class="main">
+                  <h2><b><strong><center>Incredible Things to Visit in India</center></strong></b></h2>
+                        <ul class="cards">
+                          <li class="cards_item">
+                            <div class="card">
+                              <div class="card_image"><img src="Rajaran.jpg"></div>
+                              <div class="card_content">
+                                <center><h2 class="card_title">Heritage</h2>
+                                <p class="card_text">Ancient History Comes Alive</p></center>
+                                <button class="btn card_btn">Read More</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="cards_item">
+                            <div class="card">
+                              <div class="card_image"><img src="sprit4.jpg"></div>
+                              <div class="card_content">
+                                <center><h2 class="card_title">Spritual</h2>
+                                <p class="card_text">Celebration of Diverse Beliefs</p></center>
+                                <button class="btn card_btn">Read More</button>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="cards_item">
+                            <div class="card">
+                              <div class="card_image"><img src="natur.jpg"></div>
+                              <div class="card_content">
+                                
+                                <center><h2 class="card_title">Nature</h2>
+                                <p class="card_text">Find What You Seek</p></center>
+                                <a href="https://www.incredibleindia.org/content/incredibleindia/en/experiences/adventure/hot-air-ballooning.html" class="btn card_btn"><center>Read More</center></a>
+                              </div>
+                            </div>
+                          </li>
+      
+                        </ul>
+                      </div>
+          <h2><b><strong><center>Popular in India</center></strong></b></h2></div>
 
-
-           <div class="main">
-              <h2><b><strong><center>Incredible Things to Visit in India</center></strong></b></h2>
+          <div class="main">
+              <a href="#" class="mv">
                     <ul class="cards">
                       <li class="cards_item">
                         <div class="card">
-                          <div class="card_image"><img src="Rajarani3.jpg"></div>
+                          <div class="card_image"><img src="imag1.jpg"></div>
                           <div class="card_content">
-                            <center><h2 class="card_title">Heritage</h2>
-                            <p class="card_text">Ancient History Comes Alive</p></center>
-                            <button class="btn card_btn">Read More</button>
-                          </div>
+                            <center><h2 class="card_title">BEACHES</h2>
+                           
+                          </div></a>
                         </div>
                       </li>
+                      <a href="#" class="mv">
                       <li class="cards_item">
                         <div class="card">
-                          <div class="card_image"><img src="sprit123.jpg"></div>
+                          <div class="card_image"><img src="fort.jpg"></div>
                           <div class="card_content">
-                            <center><h2 class="card_title">Spritual</h2>
-                            <p class="card_text">Celebration of Diverse Beliefs</p></center>
-                            <button class="btn card_btn">Read More</button>
-                          </div>
+                            <center><h2 class="card_title">FORTS AND PLACES</h2>
+                            
+                          </div></a>
                         </div>
                       </li>
+                      <a href="#" class="mv">
                       <li class="cards_item">
                         <div class="card">
-                          <div class="card_image"><img src="nature11.jpg"></div>
+                          <div class="card_image"><img src="christma.jpg"></div>
                           <div class="card_content">
                             
-                            <center><h2 class="card_title">Nature</h2>
-                            <p class="card_text">Find What You Seek</p></center>
-                            <button class="btn card_btn">Read More</button>
-                          </div>
+                            <center><h2 class="card_title">CHRISTMAS DELIGHTS</h2>
+                           
+                          </div></a>
                         </div>
                       </li>
   
                     </ul>
                   </div>
-                  
-              
-              <h3 class="made_by">Made with ♡</h3>
+          
+ 
+ 
+                  <h5 class="made_by">Made with ♡</h5>
+    
+  <div>
+      <div class="footer1">
+        <p><marquee>This Website is Only for Learning Purpose.</marquee></p>
+        <p><h9>For feedback or Any Suggestion Contact me via Following links.</h9></p>
+    
+        <a href="https://www.facebook.com/pg/Incredible-India-Explore-The-India-122921289104039/about/?ref=page_internal" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/ShahniAkhil?s=08" class="fa fa-twitter"></a>
+        <a href=" https://www.linkedin.com/in/akhil-shahni-758a23185" class="fa fa-linkedin"></a>
+        <a href="https://instagram.com/akhil_b2_?igshid=1ixmnq2and6wg" class="fa fa-instagram"></a>
 
-
-  <div class="footer1">
-    <p><marquee>Follow Us On</marquee></p>
-
-    <a href="https://www.facebook.com/pg/Incredible-India-Explore-The-India-122921289104039/about/?ref=page_internal" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/ShahniAkhil?s=08" class="fa fa-twitter"></a>
-    <a href=" https://www.linkedin.com/in/akhil-shahni-758a23185" class="fa fa-linkedin"></a>
-    <a href="https://instagram.com/akhil_b2_?igshid=1ixmnq2and6wg" class="fa fa-instagram"></a>
-  </div>
-
-
-
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        <p><h10>© 2019-akhilcse555</h10></p>
+        <p><b><a href="privacy.html" target="_blank">Privacy Policy </a></b>
+            <b><a href="term.html" target="_blank">Terms of Platform Use </a></b></p>
+      </div>
+    </div>    
+    
+    
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
     </script>
-
+    
+    
+    <script>
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    
 
 </body>
 </html>
