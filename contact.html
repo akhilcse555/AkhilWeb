@@ -1,22 +1,165 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Contact Me
-    </title>
-      	<meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 
-        <STYLE>
-            body {
-                background-image: url("234.jpg");
-                background-repeat:no-repeat;
-                               background-size: cover;
+body {margin:0; background: lightgrey; font-family:Arial}
 
+.heading{
+  padding-top: 20px;
+  text-align: center;
+  color: darkblue;
+  text-shadow: 2px 2px 5px white;
+}
+
+
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .side {
+      flex: 4%;
+      padding: 0px;
+    }
+
+        .center {
+            float: left;
+            margin: auto;
+            padding: 20px;
             }
-            .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+
+   
+
+    
+    
+    @media screen and (max-width:800px) {
+      .center {
+        width:100%;
+      }
+
+    }
+    
+
+
+
+    .main{
+      margin: 0 auto;
+    }
+
+    img {
+      height: auto;
+      vertical-align: middle;
+    }
+    
+    .btn {
+      color: #ffffff;
+      padding: 0.8rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent;
+      text-decoration: none;
+    }
+    
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+    }
+    
+    @media (min-width: 40rem) {
+      .cards_item {
+        width: 50%;
+      }
+    }
+    
+    @media (min-width: 56rem) {
+      .cards_item {
+        width: 33.3333%;
+      }
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 0.25rem;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+     
+    }
+    
+    .card_content {
+      padding: 1rem;
+      background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    }
+    
+    .card_title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin: 0px;
+    }
+    
+    .card_text {
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;    
+      font-weight: 400;
+    }
+    
+            /* Font */
+            @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+    
+            /* Design */
+            *,
+            *::before,
+            *::after {
+              box-sizing: border-box;
+            }
+
+
+            .rest{
+        flex: 54%;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+@media screen and (max-width: 760px) {
+    .rest{
+        padding-top: 0px;
+        text-align: center;
+    }
+
+}
+
+
+    .fa {
+        padding: 30px;
+  font-size: 20px;
+  width: auto;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -24,7 +167,7 @@
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .fa-facebook {
@@ -44,64 +187,64 @@
   background: #125688;
   color: white;
 }
-            .m{
-                text-align: center;
-                color: black;
-                font-size: 22px;
-            }
-            .m1{
-                text-align: center;
-                color: darkseagreen;
-                font-size: 22px;
 
-            }
-            .m2 {
-                text-align: center;
-                color: black;
-                font-size: 22px;
-            }
-            .m3 {
-                text-align: center;
-                color: white;
-                font-size: 22px;
-            }
-            .m2 span{
-              color: white;
-            }
-        </STYLE>
 
-    </head>
+</style>
+</head>
 
-    <body>
+<body>
+<div>
 
-      <div class="m">
-      </br>
-          CONTACT ME:</br>
-    </br>
-
-        <img src="imw.jpg" width="280px" height="377px">
+    <div class="heading">
+          <p><b><h1>Contact Me:</h1></b></p>
       </div>
-</br>
 
-      <div class="m1">
-      </br>
-            Akhil Shahni S/O Girish Chand Prasad
-            </br>
-        </br><div class="m2">
-            Mobile no: <span>8896081448</span></br>
 
-            email: <span>akhil.shahni@cse.iiitn.ac.in, akhilcse555@gmail.com</span></br>
+      <div class="row">
+        <div class="side">
+      <div class="center">
 
-            currently: <span>IIIT-NAGPUR, Maharastra, India</span></br>
+    <div class="main">
+        <ul class="cards">
+            <li class="cards_item">
+              <div class="card">
+                <div class="card_image"><img src="myself.jpg"></div>
+                <div class="card_content">
+                  <center><h2 class="card_title">Website developer:</h2>
+                  <p class="card_text">AKHIL SHAHNI S/O GIRISH CHAND PRASAD</p></center>
+                </div>
+              </div>
+            </li>
+</div>
 
-            Permanant Address:  <span>Deoria, Uttar Pradesh, India</span></br>
+  
+          </div>
+        </div>
+    
+  
+      <div class="rest">
+          <p><b>AKHIL SHAHNI</b></p>
+        <p><b>Mobile No:</b>  8896081448</p>
 
+        <p>
+            <b> email:</b> akhil.shahni@cse.iiitn.ac.in, akhilcse555@gmail.com</p>
+
+            
+                <b> <p>currently:</b> IIIT-Nagpur, Maharastra, India</p>
+                    <b> <p>Permanant Address:</b> Deoria, Uttar Pradesh, India</p>
+
+          
+            <p>
             <a href="https://www.facebook.com/akhil.aasth.com.11" class="fa fa-facebook"></a>
             <a href="https://twitter.com/ShahniAkhil?s=08" class="fa fa-twitter"></a>
             <a href=" https://www.linkedin.com/in/akhil-shahni-758a23185" class="fa fa-linkedin"></a>
-            <a href="https://instagram.com/akhil_b2_?igshid=1ixmnq2and6wg" class="fa fa-instagram"></a>
-        </div>
-      </div>
-      </body>
-    </body>
+            <a href="https://instagram.com/akhil_b2_?igshid=1ixmnq2and6wg" class="fa fa-instagram"></a></p>
+        
+            </div>
+    </div>
+ 
+</div>
+
+</body>
 </html>
+
